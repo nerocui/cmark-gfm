@@ -677,10 +677,10 @@ Hi!
 <p>And another thing<sup class="footnote-ref"><a href="#fn4" id="fnref4">4</a></sup>.</p>
 <p>This doesn't have a referent[^nope].</p>
 <p>Hi!</p>
-<section class="footnotes">
+<section class="footnotes" data-footnotes>
 <ol>
 <li id="fn1">
-<p>Some <em>bolded</em> footnote definition. <a href="#fnref1" class="footnote-backref">↩</a></p>
+<p>Some <em>bolded</em> footnote definition. <a href="#fnref1" class="footnote-backref" aria-label="Jump up">↩</a></p>
 </li>
 <li id="fn2">
 <blockquote>
@@ -688,15 +688,15 @@ Hi!
 </blockquote>
 <pre><code>as well as code blocks
 </code></pre>
-<p>or, naturally, simple paragraphs. <a href="#fnref2" class="footnote-backref">↩</a></p>
+<p>or, naturally, simple paragraphs. <a href="#fnref2" class="footnote-backref" aria-label="Jump up">↩</a></p>
 </li>
 <li id="fn3">
-<p>no code block here (spaces are stripped away) <a href="#fnref3" class="footnote-backref">↩</a></p>
+<p>no code block here (spaces are stripped away) <a href="#fnref3" class="footnote-backref" aria-label="Jump up">↩</a></p>
 </li>
 <li id="fn4">
 <pre><code>this is now a code block (8 spaces indentation)
 </code></pre>
-<a href="#fnref4" class="footnote-backref">↩</a>
+<a href="#fnref4" class="footnote-backref" aria-label="Jump up">↩</a>
 </li>
 </ol>
 </section>

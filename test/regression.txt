@@ -190,10 +190,10 @@ A footnote in a paragraph[^1]
 </tr>
 </tbody>
 </table>
-<section class="footnotes">
+<section class="footnotes" data-footnotes>
 <ol>
 <li id="fn1">
-<p>a footnote <a href="#fnref1" class="footnote-backref">↩</a></p>
+<p>a footnote <a href="#fnref1" class="footnote-backref" aria-label="Jump up">↩</a></p>
 </li>
 </ol>
 </section>

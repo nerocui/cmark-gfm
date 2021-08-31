@@ -68,7 +68,7 @@ static bool S_put_footnote_backref(cmark_html_renderer *renderer, cmark_strbuf *
   char n[32];
   snprintf(n, sizeof(n), "%d", renderer->footnote_ix);
   cmark_strbuf_puts(html, n);
-  cmark_strbuf_puts(html, "\" class=\"footnote-backref\">↩</a>");
+  cmark_strbuf_puts(html, "\" class=\"footnote-backref\" aria-label=\"Jump up\">↩</a>");
 
   return true;
 }
@@ -392,7 +392,7 @@ static int S_render_node(cmark_html_renderer *renderer, cmark_node *node,
   case CMARK_NODE_FOOTNOTE_DEFINITION:
     if (entering) {
       if (renderer->footnote_ix == 0) {
-        cmark_strbuf_puts(html, "<section class=\"footnotes\">\n<ol>\n");
+        cmark_strbuf_puts(html, "<section class=\"footnotes\" data-footnotes>\n<ol>\n");
       }
       ++renderer->footnote_ix;
       cmark_strbuf_puts(html, "<li id=\"fn");
